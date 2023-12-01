@@ -52,7 +52,7 @@ while True:
                                                             'vc':volt3,
                                                             'machine_code':machine_code
                                                     })
-            time.sleep(5)
+            time.sleep(600)
     except:
         pass
    
