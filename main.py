@@ -21,7 +21,7 @@ while True:
             if int(data_json[0]['online_status']) == 1:
                 print("อัพโหลดไฟล์ แบบ online")
                 # volt
-                volt = open('/home/pi/hottub_ma/txt_file/volt_tag.txt','r')
+                volt = open('/home/linaro/hottub_linaro/txt_file/volt_tag.txt','r')
                 split_file_volt = volt.read().split(",")
                 volt1 = split_file_volt[0].replace("[","")
                 volt2 = split_file_volt[1]
@@ -38,10 +38,10 @@ while True:
                                                             'vc':volt3,
                                                             'machine_code':machine_code
                                                     })
-                time.sleep(5)
+                time.sleep(300)
             else:
                 print("โหมด Offline")
-                volt = open('/home/pi/hottub_ma/txt_file/volt_tag.txt','r')
+                volt = open('/home/linaro/hottub_linaro/txt_file/volt_tag.txt','r')
                 split_file_volt = volt.read().split(",")
                 volt1 = split_file_volt[0].replace("[","")
                 volt2 = split_file_volt[1]
