@@ -38,7 +38,6 @@ while True:
                                                             'vc':volt3,
                                                             'machine_code':machine_code
                                                     })
-                time.sleep(300)
             else:
                 print("โหมด Offline")
                 volt = open('/home/linaro/hottub_linaro/txt_file/volt_tag.txt','r')
